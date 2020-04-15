@@ -1,0 +1,17 @@
+﻿
+
+@model HomeViewModel
+
+<partial name="_Carousel" />
+
+<h2>Most Wanted Burguers</h2>
+<h4>Rich in Flavor, Textture and Size</h4>
+
+<div class="row">
+
+    @foreach (var burguer in Model.BestSellers)
+    {
+        <partial name="_BurguerCard" model="burguer" />
+    }
+
+</div>

@@ -1,0 +1,10 @@
+﻿
+@model BurguerListViewModel
+
+
+<h1>@Model.CurrentCategory</h1>
+
+@foreach (var burguer in Model.Burguers)
+{
+    <partial name="_Burguercard" model="burguer" />
+}
