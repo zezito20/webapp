@@ -13,11 +13,12 @@ namespace burguerwebapp.Models
         public IEnumerable<Burguer> AllBurguers =>
             new List<Burguer>
             {
-                new Burguer{BurguerId = 1, Name = "Chicken Burguer", Price=12.95M, ImageUrl="https://localhost:44324/images/chickenburger.jpg", Description="Veggie Burger with sweet potatoes", Category = _categoryRepository.AllCategories.ToList()[0], IsBestSeller = true},
-                new Burguer{BurguerId = 2, Name = "Beef Burguer", Price=13.95M, ImageUrl="https://localhost:44375/images/BaconBurgers.jpg", Description="Traditional Beef Burger", Category = _categoryRepository.AllCategories.ToList()[1], IsBestSeller = false},
-                new Burguer{BurguerId = 3, Name = "Double Beef Burguer", Price=14.95M, ImageUrl="https://localhost:44375/images/dbeef.jpg", Description="Double Taste", Category = _categoryRepository.AllCategories.ToList()[1], IsBestSeller = false},
-                new Burguer{BurguerId = 4, Name = "Beef and Backon Burguer", Price=14.95M, ImageUrl="https://localhost:44375/images/unnamed.jpg", Description="Added taste of bacon", Category = _categoryRepository.AllCategories.ToList()[1], IsBestSeller = true}
+                new Burguer{BurguerId = 1, Name = "Chicken Burguer", Price=12.95M, ImageUrl="https://strwebappdemoburguer.blob.core.windows.net/ctnwebappdemoburguer/chickenburger.jpg", Description="Veggie Burger with sweet potatoes", Category = _categoryRepository.AllCategories.ToList()[0], IsBestSeller = true},
+                new Burguer{BurguerId = 2, Name = "Beef Burguer", Price=13.95M, ImageUrl="https://strwebappdemoburguer.blob.core.windows.net/ctnwebappdemoburguer/BaconBurgers-infogourmet.jpg", Description="Traditional Beef Burger", Category = _categoryRepository.AllCategories.ToList()[1], IsBestSeller = false},
+                new Burguer{BurguerId = 3, Name = "Double Beef Burguer", Price=14.95M, ImageUrl="https://strwebappdemoburguer.blob.core.windows.net/ctnwebappdemoburguer/dbeef.jpg", Description="Double Taste", Category = _categoryRepository.AllCategories.ToList()[1], IsBestSeller = false},
+                new Burguer{BurguerId = 4, Name = "Beef and Backon Burguer", Price=14.95M, ImageUrl="https://strwebappdemoburguer.blob.core.windows.net/ctnwebappdemoburguer/Impossible-Burger-600-x-400.jpg", Description="Added taste of bacon", Category = _categoryRepository.AllCategories.ToList()[1], IsBestSeller = true}
             };
+
 
         public IEnumerable<Burguer> IsBestSeller { get; }
 

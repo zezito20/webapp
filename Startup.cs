@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using burguerwebapp.Controllers;
 using burguerwebapp.Data;
 using burguerwebapp.Models;
 using Microsoft.AspNetCore.Builder;
@@ -30,20 +31,20 @@ namespace burguerwebapp
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
+                options.CheckConsentNeeded = context => false;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
 
             //dbservices
-
+            
             //services.AddDbContext<AppDbContext>(options =>
             //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //azu option
             // Use SQL Database if in Azure, otherwise, use SQLite
             if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
                 services.AddDbContext<AppDbContext>(options =>
-                        options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
+                        options.UseSqlServer(Configuration.GetConnectionString("MyDBConnection")));
             else
                 services.AddDbContext<AppDbContext>(options =>
                         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
@@ -53,8 +54,12 @@ namespace burguerwebapp
 
             services.AddScoped<IBurguerRepository, BurguerRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
+            services.AddHttpContextAccessor();
+            services.AddSession();
             services.AddMvc();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,8 +74,8 @@ namespace burguerwebapp
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
-            app.UseMvc();
+            app.UseSession();
+            
 
             app.UseMvc(routes =>
             {

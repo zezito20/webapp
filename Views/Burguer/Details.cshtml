@@ -11,5 +11,14 @@
             <a href="#">@Model.Name</a>
         </h3>
         <p>@Model.Description</p>
+       
+        <div class="addToCart">
+        <p class="button">
+            <a class="btn btn-primary"
+               asp-controller="ShoppingCart"
+               asp-action="AddToShoppingCart"
+               asp-route-burguerId="@Model.BurguerId">Add to cart</a>
+        </p>
+        </div>
     </div>
     </div>

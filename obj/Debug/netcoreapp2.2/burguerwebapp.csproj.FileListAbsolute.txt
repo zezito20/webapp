@@ -9,7 +9,6 @@ C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\bin\Debug\netcoreapp2.2
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\bin\Debug\netcoreapp2.2\burguerwebapp.pdb
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\bin\Debug\netcoreapp2.2\burguerwebapp.Views.dll
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\bin\Debug\netcoreapp2.2\burguerwebapp.Views.pdb
-C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\burguerwebapp.csprojAssemblyReference.cache
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\burguerwebapp.csproj.CoreCompileInputs.cache
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\burguerwebapp.RazorAssemblyInfo.cache
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\burguerwebapp.RazorAssemblyInfo.cs
@@ -20,6 +19,12 @@ C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\burguerwebapp.RazorCoreGenerate.cache
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\Burguer\Details.cshtml.g.cs
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\Burguer\List.cshtml.g.cs
+C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\Order\Checkout.cshtml.g.cs
+C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\Order\CheckoutComplete.cshtml.g.cs
+C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
+C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_BurguerCard.cshtml.g.cs
+C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Carousel.cshtml.g.cs
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
@@ -30,6 +35,5 @@ C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\burguerwebapp.pdb
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\burguerwebapp.genruntimeconfig.cache
 C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\burguerwebapp.csproj.CopyComplete
-C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_BurguerCard.cshtml.g.cs
-C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Carousel.cshtml.g.cs
+C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\burguerwebapp.csprojAssemblyReference.cache
+C:\Users\Admin\burguerwebapp\burguerwebapp\burguerwebapp\obj\Debug\netcoreapp2.2\Razor\Views\ShoppingCart\Index.cshtml.g.cs

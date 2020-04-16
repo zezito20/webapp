@@ -17,6 +17,12 @@ namespace burguerwebapp.Data
         public DbSet<Burguer> Burguers { get; set; }
         public DbSet<Category> Categories { get; set; }
 
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
+
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -37,7 +43,7 @@ namespace burguerwebapp.Data
                 Name = "Chicken Burguer",
                 Description = "Veggie Burger with sweet potatoes",
                 Price = 12.95M,
-                ImageUrl = "https://localhost:44375/images/chickenburger.jpg",
+                ImageUrl = "https://strwebappdemoburguer.blob.core.windows.net/ctnwebappdemoburguer/chickenburger.jpg",
                 CategoryId = 1,
                 IsBestSeller = true,
             });
@@ -49,10 +55,10 @@ namespace burguerwebapp.Data
                 Name = "Burguer",
                 Description = "Traditional Beef Burger",
                 Price = 13.95M,
-                ImageUrl = "https://localhost:44375/images/BaconBurgers.jpg",
+                ImageUrl = "https://strwebappdemoburguer.blob.core.windows.net/ctnwebappdemoburguer/Impossible-Burger-600-x-400.jpg",
                 CategoryId = 2,
                 IsBestSeller = false,
-            });
+            }); 
 
             modelBuilder.Entity<Burguer>().HasData(new Burguer
 
@@ -61,7 +67,7 @@ namespace burguerwebapp.Data
                 Name = "Double Beef Burguer",
                 Description = "Double Taste",
                 Price = 14.95M,
-                ImageUrl = "https://localhost:44375/images/dbeef.jpg",
+                ImageUrl = "https://strwebappdemoburguer.blob.core.windows.net/ctnwebappdemoburguer/dbeef.jpg",
                 CategoryId = 2,
                 IsBestSeller = false,
             });
@@ -73,7 +79,7 @@ namespace burguerwebapp.Data
                 Name = "waygyou Burguer",
                 Description = "Veggie and SpiII-cy!",
                 Price = 14.95M,
-                ImageUrl = "https://localhost:44375/images/flamebur.jpg",
+                ImageUrl = "https://strwebappdemoburguer.blob.core.windows.net/ctnwebappdemoburguer/BaconBurgers-infogourmet.jpg",
                 CategoryId = 1,
                 IsBestSeller = false,
             });
